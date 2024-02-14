@@ -14,21 +14,14 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 <Layout title="About">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
+      <Fragment slot="title"></Fragment>
+      <Fragment slot="desc"></Fragment>
     </Sectionhead>
-
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
-      </p>
-    </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+      <div class="group">
+        <div class="w-full aspect-square">
+        </div>
+      </div>
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -44,14 +37,54 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             </div>
 
             <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
-              <h3 class="text-sm text-slate-500">
+              <h2 class="text-lg font-semibold">{teamMemberEntry.data.name}</h2>
+              <h3 class="text-sm">
                 {teamMemberEntry.data.title}
               </h3>
             </div>
           </div>
         ))
       }
+    </div>
+
+    <Sectionhead>
+      <Fragment slot="title">Why <span style="color: #02AB4A;">developuls</span>?</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
+    <div class="flex flex-col gap-2 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-2xl" style="color: #02AB4A;">
+        Experienced Team
+      </h2>
+      <p class="text-lg leading-relaxed">
+        Developuls is packed with an extraordinary amount of experience in software engineering, product management, tech writing, developer relations, and IT consulting. We've seen and crafted developer program journeys in both, early-stage startups, and 4k-employee enterprises.
+      </p>
+      <p class="text-lg leading-relaxed">
+        We'll research your domain and audience and meet the needs of growing your developer program.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-2 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-2xl" style="color: #02AB4A;">
+        Product-focused
+      </h2>
+      <p class="text-lg leading-relaxed">
+        There are no one-size-fits-all solutions. We understand that every product is unique, and every dev tool is a world of its own. While you need to stay informed on all relevant metric indicators, treating them equally will only get you all over the place.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Our strategies are tailored to help your solution's short and long-term goals come through.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-2 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-2xl" style="color: #02AB4A;">
+        Community Nurturing
+      </h2>
+      <p class="text-lg leading-relaxed">
+        Your dev community is a safe space for everyone playing around and using your solution. Not everyone involved will be keen to fill in your questionnaires or react to your announcements and launches equally.
+      </p>
+      <p class="text-lg leading-relaxed">
+        We'll help you grow your community with a personal touch and learn about it as you go.
+      </p>
     </div>
   </Container>
 </Layout>

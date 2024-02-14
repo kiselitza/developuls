@@ -1,29 +1,48 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+---
+
 <footer class="my-20">
-  <p class="text-sm">
-    HQ: Bosnia and Herzegovina 🇧🇦
-  </p>
-  <p class="text-sm">
-    Legal Subject Name: OD "DEVELOPULS" VL. Aldin Kiselica
-  </p>
-  <p class="text-sm">
-    GOV ID NUMBER: 4303979320008
-  </p>
-  </wbr>
-  <p class="text-sm">
-    Copyright © {new Date().getFullYear()} developuls. All rights reserved.
-  </p>
-  <!--
-    Can we ask you a favor 🙏
-    Please keep this backlink on your website if possible.
-    or Purchase a commercial license from https://web3templates.com
-  -->
-  <p class="text-center text-xs text-slate-500 mt-1">
-    Made by <a
-      href="https://web3templates.com"
-      target="_blank"
-      rel="noopener"
-      class="hover:underline">
-      Web3Templates
-    </a>
-  </p>
+  <div class="grid md:grid-cols-1 mx-auto max-w-6xl mt-1">
+    <div style="text-align: center; justify-content: space-between; padding: 16px 64px 0px 0px;">
+      <ul>
+        <li style="display: inline-block">
+          <a class="btn btn-outline-light btn-floating" href="https://www.linkedin.com/company/developuls" role="button">
+            <Icon class="w-6 h-6" name="fa-brands:linkedin" />
+          </a>
+        </li>
+        <li style="display: inline-block">
+          <a class="btn btn-outline-light btn-floating" href="https://github.com/kiselitza" role="button">
+            <Icon class="w-6 h-6" name="fa-brands:github-square" />
+          </a>
+        </li>
+        <li style="display: inline-block">
+          <a class="btn btn-outline-light btn-floating" href="https://discordapp.com/users/500930455604953088" role="button">
+            <Icon class="w-6 h-6" name="fa-brands:discord" />
+          </a>
+        </li>
+        <li style="display: inline-block">
+          <a class="btn btn-outline-light btn-floating" href="https://dev.to/kiselitza" role="button">
+            <Icon class="w-6 h-6" name="fa-brands:dev" />
+          </a>
+        </li>
+    </ul>
+    </div>
+    <p class="text-sm text-slate-400">
+      OD "DEVELOPULS" VL. Aldin Kiselica
+    </p>
+    <p class="text-sm text-slate-400">
+      GOV ID #: 4303979320008
+    </p>
+    </wbr>
+    <p class="text-sm text-slate-400">
+        HQ: Sarajevo, Bosnia and Herzegovina 🇧🇦
+    </p>
+    </wbr>
+    </wbr>
+    <p class="text-center text-xs text-slate-500 mt-1">
+      Copyright © {new Date().getFullYear()} developuls. All rights reserved.
+    </p>
+  </div>
 </footer>

@@ -4,51 +4,32 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Training & Consulting",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Expert guidance and skill development through services such as market research, documentation and website optimization, CFPs coaching, recruitment support, and educational workshops.",
+    icon: "mdi:teacher",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Awareness Strategy",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Enhancing dev tool visibility and growth potential with services like content strategy development, researching for untapped potential, planning event calendar, and executing targeted outreach campaigns.",
+    icon: "fluent:arrow-growth-20-filled",
   },
   {
-    title: "On-Demand Components",
+    title: "Community Strategy",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Broad Integration",
-    description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Building a strong and engaged community through services encompassing community engagement, KYC strategy implementation, partnerships, network expansion, and dedicated plan for the optimal developer journey.",
+      icon: "mdi:account-group",
   },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+    A one-stop shop for developer relations services
   </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+  <p class="text-lg mt-4">
+    Focus on innovation. Let <span style="color: #02AB4A; font-weight:800;">developuls</span> handle the strategy of your dev tool growth.
   </p>
 </div>
 
@@ -60,8 +41,8 @@ const features = [
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-300 mt-2 leading-relaxed">{item.description}</p>
+          <h3 class="font-semibold text-lg" style="color: #02AB4A;">{item.title}</h3>{" "}
+          <p class="mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
     ))
