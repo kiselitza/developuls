@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import logoImage from "assets/developuls-logo.svg";
 
 const menuitems = [
   {
@@ -44,8 +45,14 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg">
-          <img src="assets/developuls-logo.svg" alt="developuls logo">
-          <span style="color: #02AB4A">developuls</span>
+          <Picture
+          src={logoImage}
+          alt="Avocado with a heartbeat"
+          widths={[20, 40, 60]}
+          loading="eager"
+          format="avif"
+        />
+              <span style="color: #02AB4A">developuls</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
