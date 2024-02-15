@@ -11,7 +11,7 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
+  "/opengraph.png",
   Astro.site
 ).toString();
 
@@ -48,7 +48,7 @@ const makeTitle = title
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Developuls Homepage Screenshot",
         },
       }}
     />
@@ -63,6 +63,26 @@ const makeTitle = title
       img {
         content-visibility: auto;
       }
+
+      .prose h2 {
+        color: #02AB4A;
+      }
+
+      .prose p strong {
+        color: #02AB4A;
+      }
+
+      .prose p a {
+        color: #02AB4A;
+      }
+
+      .prose-lg img {
+        max-width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
     </style>
   </body>
 </html>
